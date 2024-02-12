@@ -15,6 +15,32 @@ const App = () => {
   return (
     <div>
 
+<button onClick={()=>{
+
+
+if(index == images.length-1){
+  return;
+}
+
+setIndex(index+1)
+
+
+}}>next</button>
+
+
+
+<button onClick={()=>{
+
+
+if(index == 0){
+  return;
+}
+
+setIndex(index-1)
+
+
+}}>before</button>
+
       <Pannellum
       
       width="100%"
@@ -32,31 +58,7 @@ const App = () => {
       </Pannellum>
 
 
-      <button onClick={()=>{
-
-
-        if(index == images.length-1){
-          return;
-        }
-        
-        setIndex(index+1)
-        
-        
-        }}>next</button>
-
-
-
-        <button onClick={()=>{
-
-
-        if(index == 0){
-          return;
-        }
-
-        setIndex(index-1)
-
-
-        }}>before</button>
+   
 
      
     </div>
